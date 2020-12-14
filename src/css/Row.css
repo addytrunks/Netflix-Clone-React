@@ -1,0 +1,41 @@
+.row{
+    color: white;
+    margin-left: 20px;
+}
+
+.row__posters{
+    cursor: auto;
+    display: flex;
+    /* Hide the y-axis scrollbar */
+    overflow-y: hidden;
+    /* Show the x-axis scrollbar if there is a scrolling functionality in x-axis  */
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar{
+    /* Dont show the scrollbar but keep its functionality */
+    display: none;
+}
+
+.row__poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    transition: transform 450ms;
+    margin-right: 10px;
+}
+
+.row__poster:hover{
+    transform: scale(1.08);
+}
+
+.row__postLarge{
+    max-height: 250px;
+
+}
+
+.row__postLarge:hover{
+    transform: scale(1.09);
+
+}
